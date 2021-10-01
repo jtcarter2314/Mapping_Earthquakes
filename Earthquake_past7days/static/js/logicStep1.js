@@ -40,7 +40,7 @@ L.control.layers(baseMaps).addTo(map);
 
 
 // Retrieve the earthquake GeoJSON data.
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
+d3.json("https://raw.githubusercontent.com/jtcarter2314/Mapping_Earthquakes/main/majorAirports.json").then(function(data) {
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJson(data).addTo(map);
 });
